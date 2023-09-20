@@ -1,0 +1,75 @@
+-------------------------------------------------------------------------------
+Test set: com.examly.springapp.SpringappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 16, Errors: 0, Skipped: 0, Time elapsed: 3.366 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+testControllerHasRestControllerAnnotation  Time elapsed: 0.014 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.examly.springapp.controller.ChairController or annotation org.springframework.web.bind.annotation.RestController does not exist.
+	at com.examly.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:173)
+	at com.examly.springapp.SpringappApplicationTests.testControllerHasRestControllerAnnotation(SpringappApplicationTests.java:131)
+
+testChairModelHasmaterialField  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field material in class com.examly.springapp.model.Chair does not exist.
+	at com.examly.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:153)
+	at com.examly.springapp.SpringappApplicationTests.testChairModelHasmaterialField(SpringappApplicationTests.java:116)
+
+testChairModelHasquantityField  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field quantity in class com.examly.springapp.model.Chair does not exist.
+	at com.examly.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:153)
+	at com.examly.springapp.SpringappApplicationTests.testChairModelHasquantityField(SpringappApplicationTests.java:126)
+
+GetChairsByID  Time elapsed: 0.102 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.GetChairsByID(SpringappApplicationTests.java:195)
+
+testModelFile  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testModelFile(SpringappApplicationTests.java:68)
+
+testChairServiceAnnotation  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.examly.springapp.service.ChairService or annotation org.springframework.stereotype.Service does not exist.
+	at com.examly.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:173)
+	at com.examly.springapp.SpringappApplicationTests.testChairServiceAnnotation(SpringappApplicationTests.java:139)
+
+deleteChair  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.deleteChair(SpringappApplicationTests.java:231)
+
+testChairModelHasNameField  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field name in class com.examly.springapp.model.Chair does not exist.
+	at com.examly.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:153)
+	at com.examly.springapp.SpringappApplicationTests.testChairModelHasNameField(SpringappApplicationTests.java:111)
+
+getAllChairs  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.getAllChairs(SpringappApplicationTests.java:205)
+
+testChairModelHascolorField  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field color in class com.examly.springapp.model.Chair does not exist.
+	at com.examly.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:153)
+	at com.examly.springapp.SpringappApplicationTests.testChairModelHascolorField(SpringappApplicationTests.java:121)
+
+updateChair  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.updateChair(SpringappApplicationTests.java:220)
+
+addChairs  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.addChairs(SpringappApplicationTests.java:185)
+
+testrepositoryFile  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testrepositoryFile(SpringappApplicationTests.java:83)
+
+testChairModelHasIdField  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field chairId in class com.examly.springapp.model.Chair does not exist.
+	at com.examly.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:153)
+	at com.examly.springapp.SpringappApplicationTests.testChairModelHasIdField(SpringappApplicationTests.java:106)
+
+testcontrollerfile  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testcontrollerfile(SpringappApplicationTests.java:53)
+
+testServiceFile  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testServiceFile(SpringappApplicationTests.java:98)
+
